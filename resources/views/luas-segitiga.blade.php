@@ -25,9 +25,9 @@
     </div>
     <div class="form-group">
         <label>Hasil</label>
-        <input type="number" value="{{ $hasil }}" class="form-control" name="">
+        <input type="number" value="{{ $hasil }}" class="form-control" readonly>
       </div>
-    <a href="" class="btn btn-success">Kembali</a>
+    <a href="/segitiga" class="btn btn-success">Kembali</a>
   </form>
 </div>
 
