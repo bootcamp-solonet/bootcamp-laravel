@@ -15,14 +15,14 @@ class BookController extends Controller
 
     }
 
-    function persegi_panjang(){
+    function segitiga(){
         return view('persegi-panjang');
     }
 
-    public function luaspersegipanjang(Request $request){
+    public function luas_segitiga(Request $request){
 
-        $alas        = $request->get('panjang');
-        $tinggi      = $request->get('lebar');
+        $alas        = $request->get('alas');
+        $tinggi      = $request->get('tinggi');
 
         $hasil       = $alas * $tinggi / 2;
 

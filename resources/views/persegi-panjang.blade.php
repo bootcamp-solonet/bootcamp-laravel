@@ -13,15 +13,15 @@
 
 <div class="container mt-5">
   <h2>Luas Segitiga</h2>
-  <form method="POST" action="/luas-persegi-panjang">
+  <form method="POST" action="/luas-segitiga">
     @csrf
     <div class="form-group">
       <label>Alas</label>
-      <input type="number" placeholder="Masukan Alas" class="form-control" name="panjang">
+      <input type="number" placeholder="Masukan Alas" class="form-control" name="alas">
     </div>
     <div class="form-group">
       <label>Tinggi</label>
-      <input type="number" placeholder="Masukan Tinggi" class="form-control" name="lebar">
+      <input type="number" placeholder="Masukan Tinggi" class="form-control" name="tinggi">
     </div>
     <button type="submit" class="btn btn-primary">Hitung</button>
   </form>

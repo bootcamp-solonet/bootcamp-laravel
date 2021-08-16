@@ -19,8 +19,8 @@ use App\Http\Controllers\BookController;
 // });
 
 
-Route::get('/persegi-panjang', [BookController::class, 'persegi_panjang']);
-Route::post('/luas-persegi-panjang', [BookController::class, 'luaspersegipanjang']);
+Route::get('/segitiga', [BookController::class, 'segitiga']);
+Route::post('/luas-segitiga', [BookController::class, 'luas_segitiga']);
 
 Route::get('/books/{judul}', [BookController::class, 'index']);
 
