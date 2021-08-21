@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,8 @@ Route::get('/segitiga', [BookController::class, 'segitiga']);
 Route::post('/luas-segitiga', [BookController::class, 'luas_segitiga']);
 
 Route::get('/books/{judul}', [BookController::class, 'index']);
+
+Route::get('buku', [BukuController::class, 'index']);
 
 Route::get('/user/{name}', function ($name) {
     return '<center><h2>Selamat Datang</h2> <h1>"'.$name.'"</h1></center>';
