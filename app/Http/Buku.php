@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class customer extends Model
+class Buku extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'kode',
-        'nama',
+        'judul',
+        'tahun_terbit',
+        'penerbit',
+        'id_pengarang'
     ];
     
-    protected $connection = 'db_toko';
-    protected $table = 'cust';
-
+    protected $table = 'buku';
 }
