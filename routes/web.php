@@ -26,12 +26,13 @@ Route::post('/luas-segitiga', [BookController::class, 'luas_segitiga']);
 Route::get('/books/{judul}', [BookController::class, 'index']);
 
 Route::get('buku', [BukuController::class, 'index']);
+Route::resource('buku', BukuController::class);
 
 Route::get('/user/{name}', function ($name) {
     return '<center><h2>Selamat Datang</h2> <h1>"'.$name.'"</h1></center>';
 });
 
-Route::get('/', function () {
+Route::get('/', function () {   
     return view('persegi-panjang');
 });
 
